@@ -16,10 +16,6 @@ def main():
     counter = sort_by_num(counter)
     for key, value in counter.items():
         print(f"""The '{key}' character was found {value} times.""")
-    # print(f"""Following characters can be found:
-    # a: {counter["a"]}, b: {counter["b"]}, c: {counter["c"]}, d: {counter["d"]}, e: {counter["e"]}, f: {counter["f"]}, g: {counter["g"]}, h: {counter["h"]}, i: {counter["i"]}, j: {counter["j"]}, k: {counter["k"]}, l: {counter["l"]}, m: {counter["m"]},
-    # n: {counter["n"]}, o: {counter["o"]}, p: {counter["p"]}, q: {counter["q"]}, r: {counter["r"]}, s: {counter["s"]}, t: {counter["t"]}, u: {counter["u"]}, v: {counter["v"]}, w: {counter["w"]}, x: {counter["x"]}, y: {counter["y"]}, z: {counter["z"]},
-    # """)
 
 def sort_by_num(counter):
     counter = dict(sorted(counter.items(), key=lambda item: item[1], reverse=True))
